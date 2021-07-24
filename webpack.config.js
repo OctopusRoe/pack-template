@@ -24,5 +24,10 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
-  ]
+  ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname)
+    }
+  }
 }
