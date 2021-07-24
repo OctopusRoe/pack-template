@@ -2,15 +2,30 @@
   "name": "pack-template",
   "version": "0.0.1",
   "description": "",
-  "main": "src/test.js",
+  "private": false,
+  "main": "lib/index.js",
+  "keywords": [
+
+  ],
   "scripts": {
     "serve": "webpack server --open",
     "build": "babel src -d lib",
     "lint": "eslint --fix src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "typings": "types/index.d.ts",
+  "author": "OctopusRoe",
+  "bugs": {
+    "email": "zp393939@outlook.com"
+  },
+  "files": [
+    "lib",
+    "types",
+    "src",
+    "utils",
+    "scripts"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.8",
